@@ -5,5 +5,5 @@ Repo ini berisi script Python untuk eksplorasi data dari database MySQL lokal me
 ## Cara Menjalankan
 1. Clone repo ini:
    ```bash
-   git clone https://github.com/username/explorasi-data.git
-   cd eksplorasi-data
+   git clone https://github.com/tegar00s/py_project.git
+   cd py_project
