@@ -1,0 +1,13 @@
+import pandas as pd
+import sqlalchemy
+from urllib.parse import quote_plus
+
+password = quote_plus("P@ssw0rd")
+engine = sqlalchemy.create_engine(f"mysql+pymysql://root:{password}@localhost:3306/db_dummy")
+
+query = "SELECT * FROM users"
+df = pd.read_sql(query,engine)
+
+print(df.head())
+
+df.to_csv("data_dummy_from_db.csv",index=False,encoding='utf-8')
