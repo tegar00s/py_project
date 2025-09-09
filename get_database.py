@@ -11,4 +11,4 @@ df = pd.read_sql(query,engine)
 
 print(df.head())
 
-df.to_csv("data_dummy_from_db.csv",index=False,encoding='utf-8')
+df.to_csv("data_dummy.csv",index=False,encoding='utf-8')
